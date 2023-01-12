@@ -1,11 +1,8 @@
-module.exports = {
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/home',
-        permanent: true,
-      },
-    ];
+const nextConfig = {
+  reactStrictMode: true,
+  env: {
+    SECRET_KEY: process.env.SECRET_KEY
   },
 };
+
+module.exports = nextConfig;
